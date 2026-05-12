@@ -59,8 +59,8 @@ While the project explores both **Power BI** and **Preset** for Dashboarding, th
 * **Secure Authentication:** The connection between Power BI Desktop and Snowflake was established using the native Snowflake connector, via **Key Pair Authentication**. This bypasses basic username/password vulnerabilities.
 * **Data Model Design (Snowflake Schema):** Rather than importing flattened, denormalized tables, the Power BI semantic model was deliberately designed using a **Snowflake Schema** to optimize DAX performance, filtering, and relationship management. The hierarchy is structured as follows:
   * `mart_fullmoon_reviews` acts as the central fact table.
-  * The `dim_listings_cleansed` dimension table is joined to the `mart_fullmoon_reviews` fact table (1-to-Many relation).
-  * The `dim_hosts_cleansed` dimension table is joined to the `dim_listings_cleansed` dimension table (1-to-Many relation).
+  * The `dim_listings_cleansed` dimension table is joined to the `mart_fullmoon_reviews` fact table (1-to-Many relationship).
+  * The `dim_hosts_cleansed` dimension table is joined to the `dim_listings_cleansed` dimension table (1-to-Many relationship).
 
 
 ## 🛠️ Technologies & Tools Used
