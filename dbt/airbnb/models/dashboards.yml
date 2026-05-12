@@ -1,0 +1,32 @@
+
+exposures:
+  - name: airbnb_pbi_dashboard
+    label: Airbnb Power BI Dashboard
+    type: dashboard
+    maturity: low
+    url: https://bit.ly/4ffizNO
+    description: Power BI Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_cleansed')
+      - ref('dim_hosts_cleansed')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Oscar Pons Ruiz
+      email: oscarpr91@gmail.com
+
+  - name: executive_dashboard_preset
+    label: Executive Dashboard (Preset)
+    type: dashboard
+    maturity: low
+    url: https://485548ad.us2a.app.preset.io/superset/dashboard/p/NklL5Xnbj3K/
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Oscar Pons Ruiz
+      email: oscarpr91@gmail.com
