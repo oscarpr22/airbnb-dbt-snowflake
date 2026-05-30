@@ -109,7 +109,7 @@ airbnb-dbt-snowflake/
 │   ├── pyproject.toml       # Python dependencies managed by uv
 │   └── uv.lock              # Deterministic dependency lock file
 ├── aws-s3-data-sources/     # Links for AWS S3 raw datasets
-├── docs/                    # Screenshots of Lineage graphs (DAG), dbt docs, dagster serve docs and Snowflake Workspace & Database Explorer
+├── docs/                    # Screenshots of Lineage graphs (DAG), dbt docs, dagster docs and Snowflake Workspace & Database Explorer
 ├── dashboards/              # Power BI and Preset Dashboards links and screenshots
 ├── .gitignore             
 └── README.md                # README file
